@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Lot Reservation System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="left-section">
+        <h2>WELCOME!</h2>
+        <p>Lot Reservation System</p>
+    </div>
+    <div class="right-section">
+        <h2>Create Account</h2>
+        <form action="register.php" method="POST">
+            <div class="input-row">
+                <input type="text" name="firstname" placeholder="Firstname" required>
+                <input type="text" name="middlename" placeholder="Middlename">
+            </div>
+            <div class="input-row">
+                <input type="text" name="lastname" placeholder="Lastname" required>
+                <select name="role" required>
+                    <option value="" disabled selected>Role</option>
+                    <option value="Client">Client</option>
+                    <option value="Agent">Agent</option>
+                    <option value="Admin">Admin</option>
+                </select>
+            </div>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="address" placeholder="Address" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="text" name="phone" placeholder="Phone" required>
+            <button type="submit" class="btn-signup">Sign Up</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
